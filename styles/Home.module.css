@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  @apply bg-gray-900 text-gray-100
 }
 
 .main {
