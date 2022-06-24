@@ -24,6 +24,21 @@ export default function Home() {
             <p>see your Todo list</p>
           </a>
 
+          <a href="/himom" className={styles.card}>
+            <h2>hi mom &rarr;</h2>
+            <p>Hi mom</p>
+          </a>
+
+          <a href="/hidad" className={styles.card}>
+            <h2>hi dad &rarr;</h2>
+            <p>Hi dad</p>
+          </a>
+
+          <a href="/api/led" className={styles.card}>
+            <h2>LED &rarr;</h2>
+            <p>control an led</p>
+          </a>
+
         </div>
       </main>
 
@@ -39,6 +54,6 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>
+      </div>
   )
 }
