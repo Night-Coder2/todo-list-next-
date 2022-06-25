@@ -6,7 +6,7 @@ const localStorageKey = 'todos'
 
 var executed = false
 
-function App() {
+const App = () => {
   const [ todos, setTodos ] = useState([])
   const todoNameRef = useRef()
   
@@ -25,14 +25,14 @@ function App() {
     localStorage.setItem(localStorageKey, JSON.stringify(todos))
   }, [todos])
 
-  function toggleTodo(id){
+  const toggleTodo = (id) => {
     const newTodos = [...todos]
     const todo = newTodos.find(todo => todo.id === id)
     todo.complete = !todo.complete
     setTodos(newTodos)
   }
  
-  function handleAddTodo(e){
+  const handleAddTodo = (e) => {
     e.preventDefault()
     const name = todoNameRef.current.value
     if (name === '') return 
@@ -42,7 +42,7 @@ function App() {
     todoNameRef.current.value = null
   }
 
-  function handleClearTodos(e){
+  const handleClearTodos = (e) => {
     e.preventDefault()
     const newTodos = todos.filter(todo => !todo.complete)
     setTodos(newTodos)
