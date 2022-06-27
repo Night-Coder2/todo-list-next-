@@ -7,12 +7,16 @@
     right: 60px;
 }
 
+.h {
+    @apply text-xl
+}
+
 .div1 {
-    @apply bg-gray-900 text-gray-100 mx-auto text-center w-full h-full
+    @apply bg-gray-900 text-gray-100 mx-auto text-center w-full h-full text-lg
 }
 
 .input {
-    @apply bg-gray-100 text-gray-900
+    @apply bg-gray-100 text-gray-900 
 }
 
 .addTodo {

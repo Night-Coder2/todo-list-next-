@@ -51,12 +51,12 @@ const App = () => {
 
   return (<>
       <div className={styles.div1}>
-        <h2>Your TodoList</h2>
+        <h1 className={styles.h}>Your TodoList</h1>
         <br/>
         <form>
-        <input className={styles.input} ref={todoNameRef} type='text' />
-        <button className={styles.addTodo} type='submit' onClick={handleAddTodo}>Add Todo</button>
-        <button className={styles.clearComplete} onClick={handleClearTodos}>Clear Complete</button>
+          <input className={styles.input} ref={todoNameRef} type='text' />
+          <button className={styles.addTodo} type='submit' onClick={handleAddTodo}>Add Todo</button>
+          <button className={styles.clearComplete} onClick={handleClearTodos}>Clear Complete</button>
         </form>
         <div >{todos.filter(todo => !todo.complete).length} left to do</div>
         <br/>

@@ -35,8 +35,23 @@ export default function Home() {
           </a>
 
           <a href="/api/led" className={styles.card}>
-            <h2>LED &rarr;</h2>
+            <h2>BETA: LED &rarr;</h2>
             <p>control an led</p>
+          </a>
+
+          <a href="/api/led" className={styles.card}>
+            <h2>Hello suma athe &rarr;</h2>
+            <p>Hello suma athe</p>
+          </a>
+
+          <a href="/api/led" className={styles.card}>
+            <h2>Hello sathish mama &rarr;</h2>
+            <p>Hello sathish mama</p>
+          </a>
+
+          <a href="/api/led" className={styles.card}>
+            <h2>Hello hema athe &rarr;</h2>
+            <p>Hello hema athe</p>
           </a>
 
         </div>
